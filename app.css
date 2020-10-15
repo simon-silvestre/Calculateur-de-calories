@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242E4C;
+    min-height: 100vh;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 700px;
+    min-height: 190px;
+    border-radius: 8px;
+    border-left: 3px solid #928AF9;
+    background: #2C385A;
+    box-shadow: 13px 20px 20px 0px #1E2744;
+}
+
+.question-container .question {
+    opacity: 0.9;
+    font-family: Montserrat-Medium;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 38px;
+}
+
+.question-container .nombre-de-questions {
+    opacity: 0.7;
+    font-family: Montserrat-Medium;
+    font-size: 15px;
+    color: #FFFFFF;
+    }
+
+.question-container #reponse {
+    width: 475px;
+    background: #242E4C;
+    border-radius: 3px;
+    border: none;
+    margin-top: 25px;
+    padding: 18px;
+}
+
+.question-container #reponse::placeholder {
+    opacity: 0.6;
+    font-family: Montserrat-Medium;
+    font-size: 12.5px;
+    color: #B7C9FF;
+}
+
+.question-container #bouton {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    padding: 13px 20px;
+    color: #928AF9;
+    background: #2C385A;
+    border: 2px solid #928AF9;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 730px) {
+
+    .question-container {
+        min-width: 475px;
+        min-height: 190px;
+    }
+
+    .question-container #reponse {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .question-container .question {
+       margin-top: 10px;
+    }
+
+    .question-container {
+        min-width: 275px;
+        min-height: 240px;
+    }
+
+    .question-container .reponse-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .question-container #bouton {
+        font-size: 10px;
+        margin: 15px 75px;
+        padding: 10px 20px;
+    }
+
+    .question-container #reponse {
+        width: 215px;
+    }
+}
