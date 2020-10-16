@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('assets/montserrat/montserrat-medium-webfont.woff2') format('woff2'),
+         url('assets/montserrat/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('assets/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('assets/montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #242E4C;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .question-container {
@@ -26,7 +44,7 @@ body {
 
 .question-container .question, h2 {
     opacity: 0.9;
-    font-family: Montserrat-Medium;
+    font-family: montserratmedium;
     font-weight: bold;
     font-size: 18px;
     color: #FFFFFF;
@@ -35,7 +53,7 @@ body {
 
 .question-container .nombre-de-questions {
     opacity: 0.7;
-    font-family: Montserrat-Medium;
+    font-family: montserratmedium;
     font-size: 15px;
     color: #FFFFFF;
 }
@@ -47,17 +65,19 @@ body {
     border: none;
     margin-top: 25px;
     padding: 18px;
+    color: #fff;
+    font-size: 16px;
 }
 
 .question-container #reponse::placeholder {
     opacity: 0.6;
-    font-family: Montserrat-Medium;
+    font-family: montserratmedium;
     font-size: 12.5px;
     color: #B7C9FF;
 }
 
 .question-container #bouton {
-    font-family: Montserrat-Bold;
+    font-family: montserratbold;
     font-size: 15px;
     padding: 13px 20px;
     color: #928AF9;

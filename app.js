@@ -38,11 +38,11 @@ function effacerReponse() {
 }
 
 function fini() {
-    if (genre === "homme") {
+    if (genre === "homme" || genre === "Homme") {
         let calories = Math.round((13.707 * poids) + (492.3 * taille ) - (6.673 * age ) + 77.607);
         questionContainer.innerHTML ="<span class='question'>Votre total calorique est de :</span><br><h2>" + calories + " Calories</h2>";
     }
-    else if (genre === "femme") {
+    else if (genre === "femme" || genre === "Femme") {
         let calories = Math.round(667.051 + (9.74 * poids) + (172.9 * taille) - (4.737 * age));
         questionContainer.innerHTML ="<span class='question affichaeFini'>Votre total calorique est de :</span><br><h2>" + calories + " Calories</h2>";
     }
@@ -53,11 +53,11 @@ form.addEventListener("submit", (e) => {
 
     if (currentQuestion <= questions.length - 1) {
         if(currentQuestion === 0) {
-            if (reponse.value == "homme") {
+            if (reponse.value == "homme" || reponse.value == "Homme") {
                 currentQuestion++;
                 genre = reponse.value;
             }
-            else if (reponse.value == "femme") {
+            else if (reponse.value == "femme" || reponse.value == "Femme") {
                 currentQuestion++;
                 genre = reponse.value;
             }
